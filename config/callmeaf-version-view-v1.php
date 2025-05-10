@@ -147,7 +147,10 @@ return [
         RequestType::ADMIN->value => [
             'prefix' => 'version_views',
             'as' => 'version_views.',
-            'middleware' => [],
+            'middleware' => [
+                'auth:sanctum',
+                'role:' . \Callmeaf\Role\App\Enums\RoleName::SUPER_ADMIN->value,
+            ],
         ],
     ],
     'enums' => [
