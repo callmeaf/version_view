@@ -20,6 +20,8 @@ class VersionViewResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'version_id' => $this->version_id,
+            'user_id' => $this->user_id,
             'created_at' => $this->created_at,
             'updated_at' => $this->updated_at,
             'deleted_at' => $this->deleted_at,
