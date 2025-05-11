@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
     $middleware,
 ] = Base::getRouteConfigFromRepo(repo: \Callmeaf\VersionView\App\Repo\Contracts\VersionViewRepoInterface::class);
 
-Route::apiResource($prefix, $controllers['version_view'])->middleware($middleware);
+//Route::apiResource($prefix, $controllers['version_view'])->middleware($middleware);
 // Route::prefix($prefix)->as($as)->middleware($middleware)->controller($controllers['version_view'])->group(function () {
     // Route::get('trashed/list', 'trashed');
     // Route::prefix('{version_view}')->group(function () {
